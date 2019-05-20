@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title=""
+            app:titleTextColor="#fff"></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/sp_advocate"
+        android:layout_alignLeft="@+id/sp_advocate"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="ADDING ADVOCATE TO NETWORK"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/sp_advocate"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:paddingRight="26dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sp_advocate"
+        android:layout_alignLeft="@+id/sp_advocate"
+        android:layout_alignBottom="@+id/sp_advocate"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginBottom="-38dp"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="5"
+        android:maxLines="5"
+        android:paddingLeft="15dp"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_name"
+        android:layout_alignLeft="@+id/txt_name"
+        android:layout_alignBottom="@+id/txt_name"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginBottom="-40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="5"
+        android:maxLines="5"
+        android:paddingLeft="15dp"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_mobile"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_email"
+        android:layout_alignLeft="@+id/txt_email"
+        android:layout_alignBottom="@+id/txt_email"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="-44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="5"
+        android:maxLines="5"
+        android:paddingLeft="15dp"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_exp"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_mobile"
+        android:layout_alignLeft="@+id/txt_mobile"
+        android:layout_alignBottom="@+id/txt_mobile"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="-43dp"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="5"
+        android:maxLines="5"
+        android:paddingLeft="15dp"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_cases"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_exp"
+        android:layout_alignLeft="@+id/txt_exp"
+        android:layout_alignBottom="@+id/txt_exp"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginBottom="-42dp"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="5"
+        android:maxLines="5"
+        android:paddingLeft="15dp"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_cases"
+        android:layout_alignStart="@+id/txt_cases"
+        android:layout_alignLeft="@+id/txt_cases"
+        android:layout_marginStart="-3dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="login"
+        android:text="ADD ADVOCATE TO N/W"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btn_add"
+        android:layout_alignStart="@+id/btn_add"
+        android:layout_alignLeft="@+id/btn_add"
+        android:layout_marginStart="199dp"
+        android:layout_marginLeft="199dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="login"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

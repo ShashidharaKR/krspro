@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/grad_bg">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/colorPrimaryDark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title=""
+            app:titleTextColor="#fff"></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="ADVOCATE PROFILE"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:textSize="30dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView11"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:text="Cases Handled :"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/sp_cases"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:background="@drawable/et_bg"
+        android:text="--Select type--"
+        android:textColor="@color/white"
+        android:textColorHint="#FFF" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/textView12"
+        android:layout_marginTop="46dp"
+        android:text="Experience :"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="38dp"
+        android:text="DOB :"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_below="@+id/textView14"
+        android:layout_marginTop="22dp"
+        android:text="Judicial Location"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_below="@+id/textView15"
+        android:layout_marginTop="29dp"
+        android:text="Lattitude  :"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="37dp"
+        android:text="Longitude:"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_exp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView14"
+        android:layout_alignLeft="@+id/sp_cases"
+        android:layout_alignStart="@+id/sp_cases"
+        android:ems="10"
+        android:paddingLeft="15dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:hint="0 years"
+        android:textColorHint="#FFF2C6C6"
+        android:background="@drawable/et_bg"/>
+
+    <TextView
+        android:id="@+id/txt_dob"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView15"
+        android:layout_alignEnd="@+id/edt_exp"
+        android:layout_alignRight="@+id/edt_exp"
+        android:ems="10"
+        android:paddingLeft="15dp"
+        android:inputType="date"
+        android:textColor="@color/white"
+        android:hint="dd:mm:yyyy"
+        android:textColorHint="#FFF2C6C6"
+        android:padding="15px"
+        android:textSize="18sp"
+        android:background="@drawable/et_bg"/>
+
+    <EditText
+        android:id="@+id/edt_lat"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignLeft="@+id/txt_dob"
+        android:layout_alignStart="@+id/txt_dob"
+        android:ems="10"
+        android:paddingLeft="15dp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:background="@drawable/et_bg"
+        />
+
+    <EditText
+        android:id="@+id/edt_lng"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignEnd="@+id/edt_lat"
+        android:layout_alignRight="@+id/edt_lat"
+        android:ems="10"
+        android:paddingLeft="15dp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:background="@drawable/et_bg"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="submit"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_alignEnd="@+id/btn_submit"
+        android:layout_alignRight="@+id/btn_submit"
+        android:layout_alignBottom="@+id/btn_submit"
+        android:layout_marginStart="199dp"
+        android:layout_marginLeft="199dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginBottom="-47dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="login"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

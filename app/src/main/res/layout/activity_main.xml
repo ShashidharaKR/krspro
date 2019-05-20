@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:src="@drawable/advocate"
+        android:id="@+id/id_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+         />
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/id_image"
+        android:layout_alignStart="@+id/id_image"
+        android:layout_below="@+id/id_image"
+        android:layout_marginTop="47dp"
+        android:text="LAW-FRIENDLY"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

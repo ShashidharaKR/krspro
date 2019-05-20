@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Advocate</string>
+    <string name="listofcases">Select Cases</string>
+    <string-array name="cases">
+        <item>--Select Type--</item>
+        <item>Civil</item>
+        <item>Criminal</item>        v
+        <item>Both</item>
+
+    </string-array>
+</resources>

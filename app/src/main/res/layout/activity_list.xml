@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/grad_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grad_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Name:"
+                android:paddingLeft="4dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <TextView
+                android:id="@+id/txt_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2px"
+                android:fontFamily="sans-serif-light"
+                android:hint="Experience"
+                android:paddingLeft="4dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Email"
+                android:paddingLeft="4dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <TextView
+                android:id="@+id/txt_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2px"
+                android:fontFamily="sans-serif-light"
+                android:hint="Case"
+                android:paddingLeft="4dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_mobile"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:autoLink="phone"
+                android:fontFamily="sans-serif-light"
+                android:hint="mobile"
+                android:paddingLeft="4dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+            <TextView
+                android:id="@+id/map"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:autoLink="phone"
+                android:background="#000"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="MAP"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+            <TextView
+                android:id="@+id/txt_book"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:autoLink="phone"
+                android:background="#000"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="Request service"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

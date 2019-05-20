@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/grad_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_mob"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/et_bg"
+        android:hint="Enter registerd  Mobile number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <Button
+        android:id="@+id/btn_otp_req"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Request for otp"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/edt_otp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/et_bg"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Verify"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#fff"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edt_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/et_bg"
+        android:hint="Enter New Password"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edt_new_cpwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/et_bg"
+        android:hint="Confirm Password"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#fff"
+        android:visibility="gone" />
+</LinearLayout>
